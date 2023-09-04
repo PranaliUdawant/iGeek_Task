@@ -18,7 +18,6 @@ const Login = () => {
             password: yup.string().required()
         }),
         onSubmit: (values) => {
-            console.log(values);
             dispatch(UserLogin(values))
         }
     })
@@ -52,10 +51,10 @@ const Login = () => {
                                         placeholder="Enter Your Email"
                                     />
                                     <div class="valid-feedback">Looks good!</div>
-                                    <div class="invalid-feedback">Please choose a password.</div>
+                                    <div class="invalid-feedback">email is required field</div>
                                 </div>
                                 <div class="mt-2">
-                                    <label for="password" class="form-label">password</label>
+                                    <label for="password" class="form-label">Password</label>
                                     <input
                                         type="password"
                                         class="form-control"
@@ -66,7 +65,7 @@ const Login = () => {
                                         placeholder="Enter Your password"
                                     />
                                     <div class="valid-feedback">Looks good!</div>
-                                    <div class="invalid-feedback">Please choose a password.</div>
+                                    <div class="invalid-feedback">password is required field</div>
                                 </div>
                                 <button type="submit" class="btn btn-dark w-100 mt-3">
                                     Login

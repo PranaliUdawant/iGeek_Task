@@ -1,0 +1,9 @@
+.barchart {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
